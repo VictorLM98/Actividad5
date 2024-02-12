@@ -1,0 +1,78 @@
+
+.caja {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    height: 800px;
+    box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.241);
+    background-color: #7cc7ae42;
+    transition: all 0.1 ease;
+}
+
+.formulario-css{
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    background-color: #03A678;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.439);
+}
+
+
+.formulario-css input{
+    width: 96%;
+    margin: 10px 0;
+}
+
+
+.formulario-css button{
+    width: 100px;
+    height: 30px;
+    align-self: center;
+}
+
+
+.print-css{
+    width: 100%;
+    background-color: #F27405;
+    border-radius: 30px;
+    gap: 5px;
+    box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.439);
+
+}
+.titulo-noticia-css {
+    border-bottom: 3px solid black;
+    font-size: 28px;
+}
+
+.new-noticia-css {
+    border-bottom: 2px solid black;
+    font-size: 26px;
+}
+
+.print-css::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .print-css::-webkit-scrollbar-track {
+    margin: 20px 0;
+    background: #00000000;
+  }
+  
+  .print-css::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+
+@media(max-width: 960px){
+    .caja{
+        flex-direction: column;
+    }
+}

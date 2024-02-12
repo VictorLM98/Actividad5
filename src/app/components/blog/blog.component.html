@@ -1,0 +1,33 @@
+<section>
+    <div class="caja">
+      <div class="formulario-css input-formulario">
+        <h1 class="new-noticia-css">Nueva noticia</h1>
+        <div> 
+          <label for="title">Escribe el Titulo</label>
+          <input type="text" id="title" [(ngModel)]="newNoticia.title">
+        </div>
+
+        <div> 
+          <label for="URL">Pon la Url</label>
+          <input type="text" id="URL" [(ngModel)]="newNoticia.url">
+        </div>
+
+        <div> 
+          <label for="texto">Escribe el Texto de tu noticia</label>
+          <input type="text" id="texto" [(ngModel)]="newNoticia.text">
+        </div>
+
+        <div> 
+          <label for="fecha">Fecha de la Noticia</label>
+          <input type="text" id="fecha" [(ngModel)]="newNoticia.fecha">
+        </div>
+       <button (click)="guardarNoticia()">Enviar Noticia</button>
+      </div>
+
+      <div class="print-css print-formulario" style="overflow-x:auto;">
+        <div class="titulo-noticia-css"><h1>Noticiero</h1></div>
+        <div [innerHTML]="cargarDatos()"></div>
+      </div>
+    </div>
+
+  </section>

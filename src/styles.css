@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+article{
+    border-bottom: 2px solid black;
+    background-color: #f49588;
+    padding: 1px;
+    font-size: 16px;
+}
+html {
+    background-color: #014040;
+}
+
+hr{
+    border-color: #d45443;
+}
+
